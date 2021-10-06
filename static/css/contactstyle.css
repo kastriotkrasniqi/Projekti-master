@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #407076;
+  padding: 0.5rem;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header li a {
+  font-size: larger;
+  color: white;
+  padding: 5px 15px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+}
+
+ul li a:hover {
+  background-color: white;
+  color: #000;
+}
+ul li #active {
+  background-color: white;
+  color: #000;
+}
+
+.logo {
+  height: 55px;
+}
+
+.form {
+  width: 35%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.form h3 {
+  color: #407076;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin: 0.7rem 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: transparent;
+  border: 3px solid #407076;
+  border-radius: 7px;
+  width: 100%;
+}
+.form textarea {
+  margin: 0.7rem 0;
+  padding: 10px;
+  background: transparent;
+  border: 3px solid #407076;
+  border-radius: 7px;
+  color: #407076;
+  width: 100%;
+  height: 8rem;
+  resize: none;
+}
+.form button {
+  cursor: pointer;
+  margin-top: 0.5cm;
+  width: 6cm;
+  height: 1cm;
+  border: 3px solid #407076;
+  color: #407076;
+  background: transparent;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 7px;
+  margin-bottom: 1.5cm;
+}
+.form button:hover {
+  background: #407076;
+  color: white;
+}
+
+.contact-section {
+  width: 35%;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  color: #407076;
+}
+.footback {
+  background-color: darkslategray;
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  color: #607d8b;
+  margin: 10px 0;
+}
+#contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.socialmedia {
+  margin: 0 0;
+}
+.socialmedia i {
+  cursor: pointer;
+  font-size: 40px;
+  padding: 10px 20px;
+  color: lightblue;
+}
+.socialmedia i:hover {
+  color: grey;
+}

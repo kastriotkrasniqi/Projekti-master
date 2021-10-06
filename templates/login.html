@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="..//static/css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      defer
+    ></script>
+
+    <script src="../static/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <a href="index.html">
+          <img class="logo" src="..//static/images/logo.png" />
+        </a>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="pergolas.html">Pergolas</a></li>
+
+          <li><a href="../templates/contact.html">Contact</a></li>
+          <li>
+            <a id="active" href="../templates/login.html"
+              ><i class="far fa-user"></i> Log in
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="background">
+      <div class="login-box">
+        <form action="#" onsubmit="return validateform()">
+          <h1>Login</h1>
+          <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" id="username" placeholder="Username" />
+          </div>
+
+          <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="pass" placeholder="Password" />
+          </div>
+
+          <input type="submit" class="btn" id="login" value="Log in" />
+          <input type="button" class="btn" id="register" value="Register" />
+        </form>
+      </div>
+
+      <div class="register-form">
+        <form action="#" onsubmit="return validateform2()">
+          <div class="register-box">
+            <h1>Register</h1>
+            <div class="textbox">
+              <i class="fas fa-user"></i>
+              <input type="text" id="usernamee" placeholder="Username" />
+            </div>
+            <div class="textbox">
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="emaill" placeholder="Email" />
+            </div>
+            <div class="textbox">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="passs" placeholder="Password" />
+            </div>
+
+            <div class="textbox">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="repass"
+                placeholder="Retype Password"
+              />
+            </div>
+            <input type="submit" class="btn" id="register" value="Register" />
+            <input
+              type="button"
+              onclick="funksioni()"
+              class="btn"
+              value="Back to log in"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
